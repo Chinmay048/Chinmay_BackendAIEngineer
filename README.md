@@ -2,7 +2,7 @@
 
 A robust, AI-driven backend pipeline designed to ingest raw educational PDFs, extract structured content, and dynamically generate adaptive quizzes using the Gemini 2.5 Flash LLM.
 
-## 🎯 Overview
+## Overview
 
 This project demonstrates a complete AI-powered learning backend system that:
 - **Ingests** educational content from PDF files
@@ -14,7 +14,7 @@ This project demonstrates a complete AI-powered learning backend system that:
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+## System Architecture & Data Flow
 
 ```
 PDF Upload
@@ -42,7 +42,7 @@ Adaptive Difficulty Calculation
 
 ---
 
-## 📋 Database Schema
+##  Database Schema
 
 ### Tables:
 
@@ -84,7 +84,7 @@ is_correct (Boolean)
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -407,22 +407,22 @@ Observe the adaptive difficulty recommendation
 
 ---
 
-## 🧠 Adaptive Difficulty Algorithm
+##  Adaptive Difficulty Algorithm
 
 The system adjusts quiz difficulty based on student performance:
 
 | Current Difficulty | Answer | Next Difficulty |
 |---|---|---|
-| Easy | ✅ Correct | Medium |
-| Easy | ❌ Incorrect | Easy (stays) |
-| Medium | ✅ Correct | Hard |
-| Medium | ❌ Incorrect | Easy |
-| Hard | ✅ Correct | Hard (stays) |
-| Hard | ❌ Incorrect | Medium |
+| Easy |  Correct | Medium |
+| Easy |  Incorrect | Easy (stays) |
+| Medium |  Correct | Hard |
+| Medium |  Incorrect | Easy |
+| Hard | Correct | Hard (stays) |
+| Hard |  Incorrect | Medium |
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 peblo-backend-challenge/
@@ -478,7 +478,7 @@ uvicorn main:app --port 8001
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 | Package | Version | Purpose |
 |---|---|---|
@@ -491,8 +491,7 @@ uvicorn main:app --port 8001
 | `pydantic` | 2.5.0 | Data validation |
 
 ---
-
-## 🤖 LLM Integration
+## LLM Integration
 
 **Model Used:** Gemini 2.5 Flash
 
@@ -509,7 +508,7 @@ uvicorn main:app --port 8001
 
 ---
 
-## 🔒 Security
+##  Security
 
 - API keys are NOT committed (see `.gitignore`)
 - Use `.env` for local development only
@@ -519,7 +518,7 @@ uvicorn main:app --port 8001
 
 ---
 
-## 🚀 Production Deployment Notes
+##  Production Deployment Notes
 
 For a production deployment, consider:
 
@@ -535,7 +534,7 @@ For a production deployment, consider:
 
 ---
 
-## 📝 Example Output
+##  Example Output
 
 ### Sample generated questions from a PDF about "Shapes":
 
@@ -574,7 +573,7 @@ For a production deployment, consider:
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 ✅ **PDF Content Ingestion** - Parser handles various PDF formats  
 ✅ **Intelligent Chunking** - 500-character chunks for optimal LLM processing  
@@ -587,7 +586,7 @@ For a production deployment, consider:
 
 ---
 
-## 📞 Support
+##  Support
 
 For issues or questions:
 1. Check the **Troubleshooting** section above
@@ -597,7 +596,7 @@ For issues or questions:
 
 ---
 
-## 📄 License
+##  License
 
 This is a challenge submission for Peblo AI Backend Engineer role.
 
